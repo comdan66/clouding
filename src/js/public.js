@@ -57,4 +57,65 @@ $(_ => {
     $('<label />').text($that.find('a.active').text()).prependTo($that).click(_ => $that.toggleClass('show'))
   })
 
+  // Gmap.key('') 裡面請放 key，如 Gmap.key('SDQER#123et23dsdferg')
+  Gmap.key('').done(_ => $('#intro-article-a aside').each(function() {
+    let $that = $(this)
+    let $gmap = $that.find('.gmap')
+    let $zoom = $that.find('.zoom label')
+    let lat = parseFloat($gmap.data('lat'))
+    let lng = parseFloat($gmap.data('lng'))
+    if (lat === undefined || lng === undefined) return
+    
+    let gmap = new google.maps.Map($gmap.get(0), {
+      zoom: 12,
+      center: new google.maps.LatLng(lat, lng),
+      disableDoubleClickZoom: true,
+      clickableIcons: false,
+      disableDefaultUI: true,
+      gestureHandling: 'greedy' })
+
+    $zoom.click(function() {
+      let zoom = gmap.zoom
+      zoom += $(this).index() ? -1 : +1
+      zoom = zoom > 20 ? 20 : zoom
+      zoom = zoom < 0 ? 0 : zoom
+      gmap.setOptions({ zoom })
+    })
+    const ori = marker => {
+      marker.class = 'marker'
+      marker.html = '<div class="pin"><i></i></div>'
+      marker.width = 20
+      marker.left = 0
+      return marker
+    }
+    const click = (marker, title) => {
+      marker.class = 'marker active'
+      marker.html = '<div class="pin"><i></i></div><div class="title">' + title + '</div>'
+      marker.width = 80
+      marker.left = 30
+      return marker
+    }
+    $that.find('.point').each(function() {
+      let $that = $(this)
+      let lat = parseFloat($that.data('lat'))
+      let lng = parseFloat($that.data('lng'))
+      if (lat === undefined || lng === undefined) return null
+
+      let marker = Marker()
+      marker.map = gmap
+      marker.height = 40
+      marker.top = -20
+      marker.position = new google.maps.LatLng(lat, lng)
+
+      $that.get(0)._marker = ori(marker)
+    }).click(function() {
+      let $that = $(this).addClass('active')
+      if (!$that.get(0)._marker) return
+      gmap.setOptions({ center: click($that.get(0)._marker, $that.find('b').text()).position })
+      $that.siblings().removeClass('active').each(function() {
+        ori($(this).get(0)._marker)
+      })
+    }).first().click()
+  }))
+
 })
