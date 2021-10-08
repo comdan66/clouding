@@ -34,6 +34,7 @@ $(_ => {
       $that.attr('index', $(this).index() + 1)
     })
   })
+
   $('#search-banner .range').each(function() {
     let $that   = $(this)
     let $from   = $that.find('.from')
@@ -49,6 +50,11 @@ $(_ => {
         $to.text(ui.values.shift())
       }
     })
+  })
+
+  $('#intro-tags').each(function() {
+    let $that = $(this)
+    $('<label />').text($that.find('a.active').text()).prependTo($that).click(_ => $that.toggleClass('show'))
   })
 
 })
