@@ -26,6 +26,29 @@ $(_ => {
       $(this).closest('div').toggleClass('show')
     })
     $that.find('.links div').first().find('label').click()
-
   })
+
+  $('.tabs').each(function() {
+    let $that = $(this)
+    $that.find('label').click(function() {
+      $that.attr('index', $(this).index() + 1)
+    })
+  })
+  $('#search-banner .range').each(function() {
+    let $that   = $(this)
+    let $from   = $that.find('.from')
+    let $to     = $that.find('.to')
+    let min     = parseInt($from.text(), 10)
+    let max     = parseInt($to.text(), 10)
+    let $slider = $that.find('.slider')
+
+    $slider.slider({
+      range: true, min, max, values: [0, 1000],
+      slide: ( event, ui ) => {
+        $from.text(ui.values.shift())
+        $to.text(ui.values.shift())
+      }
+    })
+  })
+
 })
