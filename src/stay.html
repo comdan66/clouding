@@ -47,10 +47,37 @@
     <div id='search-banner' style="background-image: url('img/search/banner.png')">
       <div class="container w1200">
         <form class='form'>
-          <label class='input'>
+          
+          <div class='check'>
             <span>關鍵字</span>
-            <input type="text" name="keyword" value="馬公市">
-          </label>
+            <div class='checks'>
+              <label>
+                <input type="checkbox" name="areas[]" value="馬公市" checked />
+                <span>馬公市</span>
+              </label>
+              <label>
+                <input type="checkbox" name="areas[]" value="湖西鄉" />
+                <span>湖西鄉</span>
+              </label>
+              <label>
+                <input type="checkbox" name="areas[]" value="白沙鄉" />
+                <span>白沙鄉</span>
+              </label>
+              <label>
+                <input type="checkbox" name="areas[]" value="馬公市" />
+                <span>馬公市</span>
+              </label>
+              <label>
+                <input type="checkbox" name="areas[]" value="湖西鄉" />
+                <span>湖西鄉</span>
+              </label>
+              <label>
+                <input type="checkbox" name="areas[]" value="白沙鄉" />
+                <span>白沙鄉</span>
+              </label>
+            </div>
+          </div>
+
           <label class='range'>
             <span>預算</span>
             <div class=vals>
@@ -72,12 +99,6 @@
       <span class='bg3' style="background-image: url('img/bg1.png')"></span>
 
       <div class="container w1200">
-        
-        <div class="tabs" index="1">
-          <label count="32">精選住宿</label>
-          <label count="23">活動行程</label>
-          <label count="3">自駕租車</label>
-        </div>
 
         <div class='boxs'>
           <a class='box' href=''>

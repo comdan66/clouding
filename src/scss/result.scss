@@ -37,7 +37,7 @@
     align-items: center;
     justify-content: flex-start;
     
-    > label {
+    > * {
       display: inline-block;
       width: calc(50% - 6px / 2);
       height: 150px;
@@ -81,6 +81,66 @@
     }
     .input {
       @include border-left-radius(16px);
+    }
+    .check {
+      @include border-left-radius(16px);
+      min-height: 150px;
+      height: auto;
+      padding-bottom: 20px;
+      span {
+        padding-left: 0;
+      }
+      .checks {
+        display: inline-block;
+        width: 100%;
+        
+        @include clearfix();
+        label {
+          float: left;
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+          margin-right: 12px;
+          margin-top: 12px;
+          input {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: inline-block;
+            z-index: 1;
+            @include opacity(0);
+            &:checked {
+              ~ span {
+                &:before {
+                  background-color: rgba(1, 139, 219, 1.00);
+                  border: 1px solid transparent;
+                }
+              }
+            }
+          }
+          span {
+            position: relative;
+            z-index: 2;
+            display: inline-block;
+            height: 22px;
+            line-height: 22px;
+            padding-left: 16px + 4px;
+            &:before {
+              content: '';
+              position: absolute;
+              left: 0;
+              top: 3px;
+              display: inline-block;
+              width: 16px;
+              height: 16px;
+              @include border-radius(3px);
+              background-color: transparent;
+              border: 1px solid rgba(190, 192, 196, 1.00);
+              @include transition(background-color .3s, border-color .3s);
+            }
+          }
+        }
+      }
     }
     .range {
       margin-left: 6px;
@@ -191,10 +251,10 @@
       width: 100%;
       flex-direction: column;
       margin-top: 32px;
-      > label {
+      > * {
         width: 100%;
       }
-      .input {
+      .input, .check {
         @include border-left-radius(0);
         @include border-top-radius(16px);
       }
