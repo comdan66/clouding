@@ -7,6 +7,7 @@
 * 景點介紹 [intro-b.html](https://comdan66.github.io/clouding/intro-b.html)
 * 聯絡我們 [contact.html](https://comdan66.github.io/clouding/contact.html)
 * 旅遊需求 [help.html](https://comdan66.github.io/clouding/help.html)
+* 住宿精選 [stay.html](https://comdan66.github.io/clouding/stay.html)
 
 ## 安裝
   * MacOS
