@@ -41,6 +41,75 @@
       </div>
     </header>
 
+    <div id='bg-cover' style="background-image: url('img/contact/banner.png')">
+    </div>
+
+    <form id='contact'>
+      <div class="container w1200">
+        <header class='header'>
+          <h1>聯絡我們</h1>
+          <span>將您的問題於下方填寫，我們會盡快為您處理！查詢<a href="">常見問題</a></span>
+        </header>
+        <div class='form'>
+          <div class='container w680'>
+            <header>
+              <h2>Send us a message</h2>
+              <span class="icon" style="background-image: url('img/contact/icon.png')"></span>
+            </header>
+
+            <div class='n2'>
+              <label class='required'>
+                <span>聯絡人</span>
+                <input type="text" name="name" placeholder="聯絡人…" value="" required />
+              </label>
+              <label>
+                <span>電子信箱</span>
+                <input type="email" name="email" placeholder="電子信箱…" value="" />
+              </label>
+            </div>
+            <div class='n2'>
+              <label>
+                <span>手機電話</span>
+                <input type="text" name="phone" placeholder="手機電話…" value="" />
+              </label>
+              <label>
+                <span>市話</span>
+                <input type="text" name="tel" placeholder="市話…" value="" />
+              </label>
+            </div>
+            <div class='n1'>
+              <label>
+                <span>詢問主題</span>
+                <select name='theme'>
+                  <option value=''>選擇項目…</option>
+                  <option value='1'>項目 1</option>
+                  <option value='2'>項目 2</option>
+                </select>
+              </label>
+            </div>
+            <div class='n1'>
+              <label class='required'>
+                <span>需求問題</span>
+                <textarea placeholder="需求問題…" required=""></textarea>
+              </label>
+            </div>
+            <div class='nx'>
+              <label class='required'>
+                <span>驗證碼</span>
+                <input type="text" name="code" placeholder="驗證碼…" value="" required />
+              </label>
+              <div id='code'>
+                <img src="img/contact/code.png">
+              </div>
+            </div>
+
+            <button type="submit">發送</button>
+
+          </div>
+        </div>
+      </div>
+    </form>
+
     <div id='contact-box'>
       <span>加</span>
       <span>入</span>

@@ -58,7 +58,8 @@ $(_ => {
   })
 
   // Gmap.key('') 裡面請放 key，如 Gmap.key('SDQER#123et23dsdferg')
-  Gmap.key('').done(_ => $('#intro-article-a aside').each(function() {
+
+  $('.point').length && Gmap.key('').done(_ => $('#intro-article-a aside').each(function() {
     let $that = $(this)
     let $gmap = $that.find('.gmap')
     let $zoom = $that.find('.zoom label')

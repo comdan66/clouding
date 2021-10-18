@@ -53,6 +53,20 @@ body {
       max-width: calc(100% - 8px * 2);
     }
   }
+  &.w680 {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 680px;
+    z-index: 2;
+    @include range-width(0, 1200px) {
+      max-width: calc(100% - 16px * 2);
+
+    };
+    @include range-width(0, 750px) {
+      max-width: calc(100% - 8px * 2);
+    }
+  }
 }
 
 #header {
@@ -235,7 +249,7 @@ body {
   }
 }
 
-#contact {
+#contact-box {
   position: fixed;
   right: 70px;
   bottom: 16px;
