@@ -380,7 +380,8 @@
     text-decoration: none;
     float: left;
     display: inline-block;
-    
+  }
+  .hotel {
     .img {
       display: inline-block;
       width: 100%;
@@ -459,6 +460,73 @@
         }
       }
     }
+  }
+  .car {
+    .img {
+      display: inline-block;
+      width: 100%;
+      height: 300px;
+      @extend %-cover;
+      background-size: contain;
+    }
+    .info {
+      display: inline-block; 
+      width: 100%;
+      text-align: left;
+      margin-top: 16px;
+      h3 {
+        display: inline-block;
+        margin: 0;
+        color: rgba(0, 0, 0, 1.00);
+        width: 100%;
+        height: 32px;
+        line-height: 32px;
+        font-size: 20px;
+      }
+      > span {
+        font-size: 14px;
+        display: inline-block;
+        width: 100%;
+        height: 20px;
+        line-height: 20px;
+        color: rgba(74, 74, 74, 1.00);
+        margin-top: 8px;
+        b {
+          font-weight: normal;
+          font-size: 20px;
+          &.blue {
+            color: rgba(50, 121, 203, 1.00);
+          }
+          &.orange {
+            color: rgba(245, 166, 35, 1.00);
+          }
+          &:after {
+            font-size: 14px;
+            display: inline-block;
+            margin-left: 4px;
+            margin-top: 2px;
+            letter-spacing: 1px;
+          }
+          &[unit]:not([unit='']):after {
+            content: '/' attr(unit);
+          }
+        }
+      }
+      > div {
+        display: inline-block;
+        width: 100%;
+        margin-top: 8px;
+        font-size: 14px;
+        color: rgba(159, 159, 159, 1.00);
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+      }
+    }
+
   }
 
   .pages {
@@ -541,7 +609,12 @@
     }
   };
   @include range-width(0, 600px) {
-    .box {
+    .hotel {
+      .img {
+        height: 200px;
+      }
+    }
+    .car {
       .img {
         height: 200px;
       }
@@ -556,6 +629,13 @@
       &:nth-child(n + 2) {
         margin-top: 44px;
       }
+    }
+    .hotel {
+      .info {
+        padding-left: 8px;
+      }
+    }
+    .car {
       .info {
         padding-left: 8px;
       }

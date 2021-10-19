@@ -8,6 +8,7 @@
 * 聯絡我們 [contact.html](https://comdan66.github.io/clouding/contact.html)
 * 旅遊需求 [help.html](https://comdan66.github.io/clouding/help.html)
 * 住宿精選 [stay.html](https://comdan66.github.io/clouding/stay.html)
+* 搜尋結果 - 租車 [search-car.html](https://comdan66.github.io/clouding/search-car.html)
 
 ## 安裝
   * MacOS
