@@ -461,7 +461,7 @@
       }
     }
   }
-  .car {
+  .car, .active {
     .img {
       display: inline-block;
       width: 100%;
@@ -527,6 +527,12 @@
       }
     }
 
+  }
+  .active {
+    .img {
+      background-size: cover;
+      @include border-radius(25px);
+    }
   }
 
   .pages {
@@ -614,7 +620,7 @@
         height: 200px;
       }
     }
-    .car {
+    .car, .active {
       .img {
         height: 200px;
       }
@@ -635,7 +641,7 @@
         padding-left: 8px;
       }
     }
-    .car {
+    .car, .active {
       .info {
         padding-left: 8px;
       }

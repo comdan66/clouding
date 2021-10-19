@@ -2,13 +2,14 @@
 
 ## 頁面
 * 網站首頁 [index.html](https://comdan66.github.io/clouding/index.html)
-* 搜尋結果 [search.html](https://comdan66.github.io/clouding/search.html)
 * 景點介紹 [intro-a.html](https://comdan66.github.io/clouding/intro-a.html)
 * 景點介紹 [intro-b.html](https://comdan66.github.io/clouding/intro-b.html)
 * 聯絡我們 [contact.html](https://comdan66.github.io/clouding/contact.html)
 * 旅遊需求 [help.html](https://comdan66.github.io/clouding/help.html)
 * 住宿精選 [stay.html](https://comdan66.github.io/clouding/stay.html)
+* 搜尋結果 - 住宿 [search-hotel.html](https://comdan66.github.io/clouding/search-hotel.html)
 * 搜尋結果 - 租車 [search-car.html](https://comdan66.github.io/clouding/search-car.html)
+* 搜尋結果 - 活動 [search-active.html](https://comdan66.github.io/clouding/search-active.html)
 
 ## 安裝
   * MacOS
