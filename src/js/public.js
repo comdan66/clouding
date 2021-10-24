@@ -56,9 +56,38 @@ $(_ => {
     let $that = $(this)
     $('<label />').text($that.find('a.active').text()).prependTo($that).click(_ => $that.toggleClass('show'))
   })
+  $('#play-tab').each(function() {
+    let $that = $(this)
+    $that.find('label').click(function() {
+      $('.p1, .p2, .p3, .p4').removeClass('show');
+      $('.p' + ($(this).index() + 1)).addClass('show');
+    }).eq(parseInt($that.find('.tabs').attr('index'), 10) - 1).click()
+  })
+  $('.q-a .qa').each(function() {
+    $(this).find('label').click(function() {
+      $(this).closest('.qa').addClass('show').siblings().removeClass('show')
+    })
+  })
+
+
+
+  $('#play-pc .banner').each(function() {
+    let $that = $(this)
+    let $imgs = $that.find('.imgs')
+    let $last = $that.find('.last').click(_ => {
+      let $img = $imgs.find('.img').first()
+      $img.clone(true).appendTo($imgs)
+      $img.remove()
+    })
+    let $next = $that.find('.next').click(_ => {
+      let $img = $imgs.find('.img').last()
+      $img.clone(true).prependTo($imgs)
+      $img.remove()
+    })
+
+  })
 
   // Gmap.key('') 裡面請放 key，如 Gmap.key('SDQER#123et23dsdferg')
-
   $('.point').length && Gmap.key('').done(_ => $('#intro-article-a aside').each(function() {
     let $that = $(this)
     let $gmap = $that.find('.gmap')
