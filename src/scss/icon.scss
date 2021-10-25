@@ -7,7 +7,7 @@
 
 @import "Lalilo";
 
-@font-face { font-family: "icon"; src: url("../icon/icomoon/fonts/icomoon.eot?t=1635149514435") format("embedded-opentype"), url("../icon/icomoon/fonts/icomoon.woff?t=1635149514435") format("woff"), url("../icon/icomoon/fonts/icomoon.ttf?t=1635149514435") format("truetype"), url("../icon/icomoon/fonts/icomoon.svg?t=1635149514435") format("svg"); }
+@font-face { font-family: "icon"; src: url("../icon/icomoon/fonts/icomoon.eot?t=1635152160301") format("embedded-opentype"), url("../icon/icomoon/fonts/icomoon.woff?t=1635152160301") format("woff"), url("../icon/icomoon/fonts/icomoon.ttf?t=1635152160301") format("truetype"), url("../icon/icomoon/fonts/icomoon.svg?t=1635152160301") format("svg"); }
 
 *[class^="icon-"]:before, *[class*=" icon-"]:before {
   font-family: "icon";
@@ -40,3 +40,9 @@
 .icon-21:before { content: "\e911"; }
 .icon-22:before { content: "\e91f"; }
 .icon-23:before { content: "\e912"; }
+.icon-24:before { content: "\f0030"; }
+.icon-25:before { content: "\e915"; }
+.icon-26:before { content: "\e913"; }
+.icon-27:before { content: "\f0f4"; }
+.icon-28:before { content: "\e9a0"; }
+.icon-29:before { content: "\e914"; }
