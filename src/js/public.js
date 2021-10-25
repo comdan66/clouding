@@ -56,21 +56,49 @@ $(_ => {
     let $that = $(this)
     $('<label />').text($that.find('a.active').text()).prependTo($that).click(_ => $that.toggleClass('show'))
   })
+  $('#footer .links > div > b > label').click(function() {
+    $(this).closest('div').addClass('show').siblings().removeClass('show')
+  })
   $('#play-tab').each(function() {
     let $that = $(this)
     $that.find('label').click(function() {
-      $('.p1, .p2, .p3, .p4').removeClass('show');
-      $('.p' + ($(this).index() + 1)).addClass('show');
+      $('#play-pc .p1, #play-pc .p2, #play-pc .p3, #play-pc .p4').removeClass('show');
+      $('#play-pc .p' + ($(this).index() + 1)).addClass('show');
     }).eq(parseInt($that.find('.tabs').attr('index'), 10) - 1).click()
   })
-  $('.q-a .qa').each(function() {
+  $('#play-pc .q-a .qa, #play-mb .q-a .qa').each(function() {
     $(this).find('label').click(function() {
       $(this).closest('.qa').addClass('show').siblings().removeClass('show')
     })
   })
 
+  $('#play-mb .menu').each(function() {
+    let $that = $(this)
+    let $div = $that.find('div')
+    
+    let $label = $that.find('label').click(function() {
+      $that.toggleClass('show')
+    }).text($div.first().text())
 
+    $div.click(function() {
+      let $div = $(this)
+      $label.text($div.text())
+      $that.toggleClass('show')
+      $('#play-mb .p1, #play-mb .p2, #play-mb .p3, #play-mb .p4').removeClass('show');
+      $('#play-mb .p' + $div.index()).addClass('show');
+    })
+    $('#play-mb .p1').addClass('show');
 
+  })
+  $('#play-mb .banner').each(function() {
+    let $that = $(this).attr('i', 1)
+    let $img = $that.find('.img')
+
+    $(Array.apply(null, { length: $img.length }).map(_ => $('<label />'))).map($.fn.toArray).appendTo($that.find('.pages')).click(function() {
+      $that.attr('i', $(this).index() + 1)
+    })
+
+  })
   $('#play-pc .banner').each(function() {
     let $that = $(this)
     let $imgs = $that.find('.imgs')
