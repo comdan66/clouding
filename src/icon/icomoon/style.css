@@ -1,18 +1,19 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?7vfwjk');
-  src:  url('fonts/icomoon.eot?7vfwjk#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?7vfwjk') format('truetype'),
-    url('fonts/icomoon.woff?7vfwjk') format('woff'),
-    url('fonts/icomoon.svg?7vfwjk#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?9r2w6p');
+  src:  url('fonts/icomoon.eot?9r2w6p#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?9r2w6p') format('truetype'),
+    url('fonts/icomoon.woff?9r2w6p') format('woff'),
+    url('fonts/icomoon.svg?9r2w6p#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: none;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -24,3 +25,82 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-23:before {
+  content: "\e912";
+}
+.icon-19:before {
+  content: "\e910";
+}
+.icon-17:before {
+  content: "\ea8b";
+}
+.icon-16:before {
+  content: "\ea9d";
+}
+.icon-14:before {
+  content: "\e90e";
+  color: #00c300;
+}
+.icon-18:before {
+  content: "\e900";
+}
+.icon-13:before {
+  content: "\e90d";
+}
+.icon-01:before {
+  content: "\e901";
+}
+.icon-02:before {
+  content: "\e902";
+}
+.icon-03:before {
+  content: "\e903";
+}
+.icon-04:before {
+  content: "\e904";
+  color: #fff;
+}
+.icon-05:before {
+  content: "\e905";
+  color: #376092;
+}
+.icon-06:before {
+  content: "\e906";
+  color: #376092;
+}
+.icon-07:before {
+  content: "\e907";
+  color: #376092;
+}
+.icon-08:before {
+  content: "\e908";
+  color: #018bdb;
+}
+.icon-09:before {
+  content: "\e909";
+  color: #018bdb;
+}
+.icon-10:before {
+  content: "\e90a";
+  color: #fff;
+}
+.icon-11:before {
+  content: "\e90b";
+  color: #fff;
+}
+.icon-12:before {
+  content: "\e90c";
+  color: #fff;
+}
+.icon-22:before {
+  content: "\e91f";
+}
+.icon-21:before {
+  content: "\e911";
+}
+.icon-15:before {
+  content: "\e90f";
+}
+.icon-20:before {
+  content: "\f095";
+}

@@ -43,9 +43,9 @@
     .icon {
       @extend %-cover;
       display: inline-block;
-      width: 75px;
       height: 40px;
-      
+      color: rgba(28, 185, 245, 1.00);
+      line-height: 40px;
     }
     h1 {
       display: inline-block;
@@ -234,11 +234,37 @@
 }
 
 #intro-article-a {
+  position: relative;
   display: inline-block;
   width: 100%;
   padding-top: 40px;
   background-color: rgba(246, 246, 246, 1.00);
   padding-bottom: 100px;
+  .bg1, .bg2, .bg3 { //---
+    position: absolute;
+    display: inline-block;
+    width: 243px;
+    height: 49px;
+    z-index: 1;
+  }
+  .bg1 {
+    right: 24%;
+    top: 5%;
+    color: rgba(255, 255, 255, 1.00);
+    font-size: 24px;
+  }
+  .bg2 {
+    left: 5%;
+    top: 65%;
+    color: rgba(255, 255, 255, 1.00);
+    font-size: 24px;
+  }
+  .bg3 {
+    right: 14%;
+    bottom: 2%;
+    color: rgba(255, 255, 255, 1.00);
+    font-size: 24px;
+  }
   .container {
     display: inline-flex;
     flex-direction: column;
@@ -494,11 +520,37 @@
   };
 }
 #intro-article-b {
+  position: relative;
   display: inline-block;
   width: 100%;
   padding-top: 44px;
   padding-bottom: 100px;
   background-color: rgba(246, 246, 246, 1.00);
+  .bg1, .bg2, .bg3 { //---
+    position: absolute;
+    display: inline-block;
+    width: 243px;
+    height: 49px;
+    z-index: 1;
+  }
+  .bg1 {
+    right: 24%;
+    top: 5%;
+    color: rgba(255, 255, 255, 1.00);
+    font-size: 24px;
+  }
+  .bg2 {
+    left: 5%;
+    top: 65%;
+    color: rgba(255, 255, 255, 1.00);
+    font-size: 24px;
+  }
+  .bg3 {
+    right: 14%;
+    bottom: 2%;
+    color: rgba(255, 255, 255, 1.00);
+    font-size: 24px;
+  }
 
   .container {
     display: inline-flex;

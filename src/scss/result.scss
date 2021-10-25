@@ -288,9 +288,9 @@
   .bg1, .bg2, .bg3 { //---
     position: absolute;
     display: inline-block;
-    width: 243px;
-    height: 49px;
     z-index: 1;
+    color: rgba(240, 240, 240, 1.00);
+    font-size: 24px;
   }
 
   .bg1 { right: 24%; top: 5%; }
@@ -375,6 +375,12 @@
           position: relative;
           display: inline-block;
           flex-shrink: 0;
+          &:before {
+            display: inline-block;
+            margin-top: 3px;
+            margin-right: 2px;
+          }
+          
 
           &:after {
             position: absolute;
@@ -459,7 +465,13 @@
         align-items: center;
         justify-content: flex-start;
         flex-wrap: wrap;
-
+        &:before {
+          display: inline-block;
+          margin-right: 4px;
+          margin-top: 1px;
+          font-size: 18px;
+        }
+        
       }
     }
 

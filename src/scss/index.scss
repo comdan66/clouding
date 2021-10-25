@@ -219,12 +219,17 @@
     height: 36px;
     line-height: 36px;
     h1 {
-      flex-grow: 1;
+      flex-shrink: 0;
       margin: 0;
       text-align: left;
     }
-    img {
-      flex-shrink: 0;
+    i {
+      flex-grow: 1;
+      color: rgba(28, 185, 245, 1.00);
+      font-size: 14px;
+      text-align: left;
+      padding-left: 10px;
+      margin-top: 3px;
     }
   }
   > .unit {
@@ -471,14 +476,20 @@
   .bg1 {
     right: 24%;
     top: 5%;
+    color: rgba(240, 240, 240, 1.00);
+    font-size: 24px;
   }
   .bg2 {
     left: 5%;
     top: 65%;
+    color: rgba(240, 240, 240, 1.00);
+    font-size: 24px;
   }
   .bg3 {
     right: 14%;
     bottom: 2%;
+    color: rgba(240, 240, 240, 1.00);
+    font-size: 24px;
   }
   .boxs {
     position: relative;
@@ -637,10 +648,14 @@
   .bg1 {
     left: 10%;
     top: 9%;
+    color: rgba(255, 255, 255, 1.00);
+    font-size: 24px;
   }
   .bg2 {
     right: 10%;
     bottom: 4%;
+    color: rgba(255, 255, 255, 1.00);
+    font-size: 24px;
   }
   .container {
     padding-bottom: 0;
@@ -663,7 +678,7 @@
       justify-content: flex-start;
       .box {
         display: inline-block;
-        width: calc((100% - 80px * 2) / 3);
+        width: calc((100% - 40px * 2) / 3);
         
         display: inline-flex;
         flex-direction: row;
@@ -681,7 +696,7 @@
         }
 
         + .box {
-          margin-left: 80px;
+          margin-left: 40px;
         }
 
         i {
@@ -690,7 +705,7 @@
           width: 90px;
           height: 90px;
           line-height: 90px;
-          background-color: rgba(0, 0, 255, 0.2);
+          font-size: 72px;
         }
         div {
           margin-left: 12px;
@@ -759,14 +774,20 @@
   .bg1 {
     left: 24%;
     top: 5%;
+    color: rgba(240, 240, 240, 1.00);
+    font-size: 24px;
   }
   .bg2 {
     right: 5%;
     top: 65%;
+    color: rgba(240, 240, 240, 1.00);
+    font-size: 24px;
   }
   .bg3 {
     left: 14%;
     bottom: 2%;
+    color: rgba(240, 240, 240, 1.00);
+    font-size: 24px;
   }
   .boxs {
     position: relative;
@@ -942,14 +963,20 @@
   .bg1 {
     right: 24%;
     top: 5%;
+    color: rgba(240, 240, 240, 1.00);
+    font-size: 24px;
   }
   .bg2 {
     left: 5%;
     top: 65%;
+    color: rgba(240, 240, 240, 1.00);
+    font-size: 24px;
   }
   .bg3 {
     right: 14%;
     bottom: 2%;
+    color: rgba(240, 240, 240, 1.00);
+    font-size: 24px;
   }
   .boxs {
     position: relative;

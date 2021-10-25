@@ -477,13 +477,12 @@
       line-height: 32px;
 
       &:before {
-        content: '';
-        background-color: rgba(0, 0, 255, 0.2);
         display: inline-block;
         width: 32px;
         height: 32px;
         line-height: 32px;
         text-align: center;
+        color: rgba(62, 62, 62, 1.00);
       }
     }
   }
@@ -544,13 +543,12 @@
       left: 0;
       top: 12px;
 
-      content: '';
       display: inline-block;
       width: 28px;
       height: 28px;
       line-height: 28px;
-      background-color: rgba(0, 0, 255, 0.2);
       text-align: center;
+      color: rgba(74, 74, 74, 1.00);
     }
     
   }
@@ -838,10 +836,9 @@
             display: inline-block;
             width: 24px;
             height: 24px;
-            content: 'i';
             margin-right: 8px;
-            background-color: rgba(0, 0, 255, 0.2);
             text-align: center;
+            color: rgba(62, 62, 62, 1.00);
           }
         }
         address {
@@ -875,10 +872,9 @@
           width: 24px;
           height: 24px;
           line-height: 24px;
-          content: 'i';
           margin-right: 8px;
-          background-color: rgba(0, 0, 255, 0.2);
           text-align: center;
+          color: rgba(74, 74, 74, 1.00);
         }
       }
     }
@@ -903,9 +899,37 @@
           flex-shrink: 0;
           @include border-radius(50%);
           background-color: rgba(0, 0, 255, 0.2);
+          text-decoration: none;
+          font-size: 26px;
 
           + * {
             margin-left: 24px;
+          }
+        }
+        .line {
+          background-color: rgba(0, 185, 0, 1.00);
+          &:before {
+            color: white;
+          }
+        }
+        .fb {
+          background-color: rgba(59, 89, 152, 1.00);
+          &:before {
+            color: white;
+          }
+        }
+        .yt {
+          background-color: rgba(255, 0, 0, 1.00);
+
+          &:before {
+            color: white;
+          }
+        }
+        .google {
+          background-color: rgba(220, 78, 65, 1.00);
+
+          &:before {
+            color: white;
           }
         }
       }

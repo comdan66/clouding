@@ -6,3 +6,37 @@
 //
 
 @import "Lalilo";
+
+@font-face { font-family: "icon"; src: url("../icon/icomoon/fonts/icomoon.eot?t=1635149514435") format("embedded-opentype"), url("../icon/icomoon/fonts/icomoon.woff?t=1635149514435") format("woff"), url("../icon/icomoon/fonts/icomoon.ttf?t=1635149514435") format("truetype"), url("../icon/icomoon/fonts/icomoon.svg?t=1635149514435") format("svg"); }
+
+*[class^="icon-"]:before, *[class*=" icon-"]:before {
+  font-family: "icon";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+}
+
+.icon-01:before { content: "\e901"; }
+.icon-02:before { content: "\e902"; }
+.icon-03:before { content: "\e903"; }
+.icon-04:before { content: "\e904"; color: #fff; }
+.icon-05:before { content: "\e905"; color: #376092; }
+.icon-06:before { content: "\e906"; color: #376092; }
+.icon-07:before { content: "\e907"; color: #376092; }
+.icon-08:before { content: "\e908"; color: #018bdb; }
+.icon-09:before { content: "\e909"; color: #018bdb; }
+.icon-10:before { content: "\e90a"; color: #fff; }
+.icon-11:before { content: "\e90b"; color: #fff; }
+.icon-12:before { content: "\e90c"; color: #fff; }
+.icon-13:before { content: "\e90d"; }
+.icon-14:before { content: "\e90e"; color: #00c300; }
+.icon-15:before { content: "\e90f"; }
+.icon-16:before { content: "\ea9d"; }
+.icon-17:before { content: "\ea8b"; }
+.icon-18:before { content: "\e900"; }
+.icon-19:before { content: "\e910"; }
+.icon-20:before { content: "\f095"; }
+.icon-21:before { content: "\e911"; }
+.icon-22:before { content: "\e91f"; }
+.icon-23:before { content: "\e912"; }
