@@ -72,7 +72,7 @@ $(_ => {
     })
   })
 
-  $('#play-mb .menu').each(function() {
+  $('#play-mb.d-1 .menu').each(function() {
     let $that = $(this)
     let $div = $that.find('div')
     
@@ -88,18 +88,16 @@ $(_ => {
       $('#play-mb .p' + $div.index()).addClass('show');
     })
     $('#play-mb .p1').addClass('show');
-
   })
-  $('#play-mb .banner').each(function() {
+  $('#play-mb.d-1 .banner').each(function() {
     let $that = $(this).attr('i', 1)
     let $img = $that.find('.img')
 
     $(Array.apply(null, { length: $img.length }).map(_ => $('<label />'))).map($.fn.toArray).appendTo($that.find('.pages')).click(function() {
       $that.attr('i', $(this).index() + 1)
     })
-
   })
-  $('#play-pc .banner').each(function() {
+  $('#play-pc.d-1 .banner').each(function() {
     let $that = $(this)
     let $imgs = $that.find('.imgs')
     let $last = $that.find('.last').click(_ => {
@@ -112,7 +110,37 @@ $(_ => {
       $img.clone(true).prependTo($imgs)
       $img.remove()
     })
+  })
 
+  $('#play-mb.d-2 .banner').each(function() {
+    let $that = $(this).attr('i', 1)
+    let $img = $that.find('.img')
+
+    $(Array.apply(null, { length: $img.length }).map(_ => $('<label />'))).map($.fn.toArray).appendTo($that.find('.pages')).click(function() {
+      $that.attr('i', $(this).index() + 1)
+    })
+  })
+  $('#play-pc.d-2 .banner').each(function() {
+    let $that = $(this).find('.bottom').attr('i', 1)
+    let $main = $(this).find('.main')
+    let $images = $(this).find('.images > *').click(function() {
+      $that.attr('i', $(this).index() + 1)
+      $main.css('background-image', 'url(' + $(this).data('url') + ')')
+    })
+    $images.each(function() {
+      let $that = $(this)
+      $that.css('background-image', 'url(' + $that.data('url') + ')')
+    })
+
+    let length = $images.length
+    let left = $that.find('.left').click(i => {
+      i = parseInt($that.attr('i'), 10) - 1
+      $images.eq((i <= 0 ? length : i) - 1).click()
+    })
+    let right = $that.find('.right').click(i => {
+      i = parseInt($that.attr('i'), 10) + 1
+      $images.eq((i > length ? 1 : i) - 1).click()
+    })
   })
 
   // Gmap.key('') 裡面請放 key，如 Gmap.key('SDQER#123et23dsdferg')

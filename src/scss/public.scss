@@ -306,6 +306,7 @@ body {
     color: white;
     + a {
       margin-top: 10px;
+      color: white;
     }
   }
 
@@ -318,6 +319,7 @@ body {
     line-height: 44px;
     text-decoration: none;
     font-size: 22px;
+    color: rgba(55, 96, 146, 1.00);
   }
   @include range-width(0, 1500px) {
     right: 16px;

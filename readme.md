@@ -11,7 +11,8 @@
 * 搜尋結果 - 租車 [search-car.html](https://comdan66.github.io/clouding/search-car.html)
 * 搜尋結果 - 活動 [search-active.html](https://comdan66.github.io/clouding/search-active.html)
 * 活動詳細 [detail-play.html](https://comdan66.github.io/clouding/detail-play.html)
-* 住宿詳細 [detail-stay.html](https://comdan66.github.io/clouding/detail-stay.html)
+* 住宿詳細 - 1 [detail-stay-1.html](https://comdan66.github.io/clouding/detail-stay-1.html)
+* 住宿詳細 - 2 [detail-stay-2.html](https://comdan66.github.io/clouding/detail-stay-2.html)
 
 ## 安裝
   * MacOS
