@@ -20,6 +20,10 @@ $(_ => {
     $that.find('.more').click(_ => $logos.toggleClass('show'))
   })
 
+  $('.detail-rows label').click(function() {
+    $(this).toggleClass('show')
+  })
+
   $('.company').each(function() {
     let $that = $(this)
     let $logos = $that.find('.links label').click(function() {

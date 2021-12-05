@@ -264,6 +264,15 @@ body {
     };
   }
 }
+#prue {
+  background-color: rgba(2, 117, 201, 1.00);
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  ~ #play-pc .nav {
+    margin-top: 0;
+  }
+}
 
 #contact-box {
   position: fixed;
